@@ -1,0 +1,27 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 1,
+        "idRef": "GetListItemsConnections`1_1",
+        "hash": "GetListItemsConnections`1_1|DataTable|8MpqL08mhaJBS88aNVGDzElNCxt2vqqwq1HowNfP2s",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Author",
+            "dataType": "System.Object, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable1",
+        "hash": "GetListItemsConnections`1_1|DataTable|sfMvfUCPQyGLEbfUsFCGzQt38UoNfQ27eBIGnN1qPhw",
+        "assemblyName": "Studio.Generated.TypedDataTable1"
+      }
+    }
+  ]
+}

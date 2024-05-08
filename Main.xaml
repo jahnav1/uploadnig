@@ -1,0 +1,208 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="729.2,619.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable1" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:umas="clr-namespace:UiPath.MicrosoftOffice365.Activities.Sharepoint;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umase="clr-namespace:UiPath.MicrosoftOffice365.Activities.Sharepoint.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umsm="clr-namespace:UiPath.MicrosoftOffice365.Sharepoint.Models;assembly=UiPath.MicrosoftOffice365" xmlns:umsmc="clr-namespace:UiPath.MicrosoftOffice365.Sharepoint.Models.Columns;assembly=UiPath.MicrosoftOffice365" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Enums</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>Microsoft.Graph</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Sharepoint.Filters</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Filters</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Sharepoint.Contracts.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Sharepoint.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Sharepoint.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Sharepoint</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph.Core</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="450,554.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable1" Name="outlist" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <umas:GetListItemsConnections x:TypeArguments="sd:DataTable1" ConnectionAccountName="{x:Null}" Filter="{x:Null}" BrowserListFriendlyName="Social" BrowserListId="f748ac8d-66f2-490b-b827-2fcb2738fefc" BrowserSiteUrl="uipath-my.sharepoint.com,96ed31eb-9bd1-4073-9cb2-3806ab334701,c40b2465-4562-4bb3-a8d9-4305946eead9" ConnectionId="74b003b1-4eda-4a1c-8753-9e4302079358" DisplayName="Get List Items" sap:VirtualizedContainerService.HintSize="388,259.6" sap2010:WorkflowViewState.IdRef="GetListItemsConnections`1_1" ItemSelectionMode="Browse" Result="[outlist]" UseConnectionService="True">
+      <umas:GetListItemsConnections.AllColumns>
+        <x:Array Type="umsm:Office365SharepointListColumnSlim">
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Title" Guid="fa564e0f-0c70-4ab9-b863-0177e6ddd247" IsRequired="True" Name="Title" ReadOnly="False" Type="Text" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Compliance Asset Id" Guid="3a6b296c-3f50-445c-a13f-9c679ea9dda3" IsRequired="False" Name="ComplianceAssetId" ReadOnly="True" Type="Text" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Group Id" Guid="15bc70c9-3214-4aed-9e16-2692166dc34a" IsRequired="False" Name="GroupId" ReadOnly="False" Type="DefaultValue" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Pinned" Guid="af6ec91a-6b12-4227-b612-abd387462934" IsRequired="False" Name="Pinned" ReadOnly="False" Type="DefaultValue" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Unread At Mentions" Guid="32ad5f2d-de5a-4282-8cfe-6cd0bd940af3" IsRequired="False" Name="UnreadMentions" ReadOnly="False" Type="DefaultValue" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Last Post" Guid="6e447d4c-adf2-4a7e-8a02-03a905b140e9" IsRequired="False" Name="LastPostId" ReadOnly="False" Type="Text" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Social Properties" Guid="2ba26235-131f-4577-bbd7-daf2d6957036" IsRequired="False" Name="SocialProperties" ReadOnly="False" Type="Text" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Url" Guid="fce72098-de5a-4282-8cfe-6cd0bd940af3" IsRequired="False" Name="Url" ReadOnly="False" Type="Text" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Farm Id" Guid="fc9a41a3-8d8f-4fde-a872-3e4a2647f09e" IsRequired="False" Name="FarmId" ReadOnly="False" Type="Text" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Site Id" Guid="fc7162e7-898c-4b14-9495-933795262aeb" IsRequired="False" Name="SiteId" ReadOnly="False" Type="DefaultValue" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="WebId" Guid="fcddf21b-346a-428a-8597-9162469759f9" IsRequired="False" Name="WebId" ReadOnly="False" Type="DefaultValue" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Parent Url" Guid="fccf0a11-eda8-4427-9e20-8ba423428947" IsRequired="False" Name="ParentUrl" ReadOnly="False" Type="Text" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Icon Url" Guid="fc303261-ddfb-4fee-945c-cf5471527324" IsRequired="False" Name="IconUrl" ReadOnly="False" Type="Text" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Not Visible In Feed" Guid="fc24ae67-e34e-41cb-9a98-d337bb806788" IsRequired="False" Name="Hidden" ReadOnly="False" Type="Boolean" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Has Feed" Guid="fc25e913-3a66-45b3-80e4-18d9f9e4e6c7" IsRequired="False" Name="HasFeed" ReadOnly="False" Type="Boolean" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Flags" Guid="fc90b917-d5e7-495f-bb4d-bd5667b3469e" IsRequired="False" Name="Flags" ReadOnly="False" Type="Text" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="List Id" Guid="fc45ee7f-e6e6-4f80-97f7-e15b007eec5f" IsRequired="False" Name="ListId" ReadOnly="False" Type="DefaultValue" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Unique Id" Guid="fc2b227c-0143-42b8-b9e7-b112f703a695" IsRequired="False" Name="ItemUniqueId" ReadOnly="False" Type="DefaultValue" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Item Id" Guid="fc42ba64-4aac-45ac-86c1-d86648f473c5" IsRequired="False" Name="ItemId" ReadOnly="False" Type="DefaultValue" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Subtype" Guid="fcce1976-9eff-4d57-9f28-8035a610191d" IsRequired="False" Name="Subtype" ReadOnly="False" Type="DefaultValue" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="File Type ProgID" Guid="fcbd47bc-7f79-4add-bf00-5fb607325b5b" IsRequired="False" Name="FileTypeProgid" ReadOnly="False" Type="Text" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Server Url ProgID" Guid="fc83e784-e169-445c-9234-9838ace39c32" IsRequired="False" Name="ServerUrlProgid" ReadOnly="False" Type="Text" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="ID" Guid="1d22ea11-1e32-424e-89ab-9fedbadb6ce1" IsRequired="False" Name="ID" ReadOnly="True" Type="DefaultValue" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Content Type" Guid="c042a256-787d-4a6f-8a8a-cf6ab767f12d" IsRequired="False" Name="ContentType" ReadOnly="False" Type="DefaultValue" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Modified" Guid="28cf69c5-fa48-462a-b5cd-27b6f9d2bd5f" IsRequired="False" Name="Modified" ReadOnly="True" Type="DateTime" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Created" Guid="8c06beca-0777-48f7-91c7-6da68bc07b69" IsRequired="False" Name="Created" ReadOnly="True" Type="DateTime" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" x:Name="__ReferenceID0" DisplayName="Created By" Guid="1df5e554-ec7e-46a6-901d-d85a3881cb18" IsRequired="False" LookupListId="__PERSON_OR_GROUP__" Name="Author" ReadOnly="True" Type="PersonOrGroup">
+            <umsm:Office365SharepointListColumnSlim.PersonOrGroup>
+              <umsmc:PersonOrGroupColumnMetadata ChooseFromType="peopleAndGroups" MultiSelect="False" />
+            </umsm:Office365SharepointListColumnSlim.PersonOrGroup>
+          </umsm:Office365SharepointListColumnSlim>
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" DisplayName="Modified By" Guid="d31655d1-1d5b-4511-95a1-7a09e9b75bf2" IsRequired="False" LookupListId="__PERSON_OR_GROUP__" Name="Editor" ReadOnly="True" Type="PersonOrGroup">
+            <umsm:Office365SharepointListColumnSlim.PersonOrGroup>
+              <umsmc:PersonOrGroupColumnMetadata ChooseFromType="peopleAndGroups" MultiSelect="False" />
+            </umsm:Office365SharepointListColumnSlim.PersonOrGroup>
+          </umsm:Office365SharepointListColumnSlim>
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Attachments" Guid="67df98f4-9dec-48ff-a553-29bece9c5bf4" IsRequired="False" Name="Attachments" ReadOnly="False" Type="DefaultValue" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Edit" Guid="503f1caa-358e-4918-9094-4a2cdc4bc034" IsRequired="False" Name="Edit" ReadOnly="True" Type="DefaultValue" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Title" Guid="bc91a437-52e7-49e1-8c4e-4698904b2b6d" IsRequired="False" Name="LinkTitleNoMenu" ReadOnly="True" Type="DefaultValue" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Title" Guid="82642ec8-ef9b-478f-acf9-31f7d45fbc31" IsRequired="False" Name="LinkTitle" ReadOnly="True" Type="DefaultValue" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" LookupColumn="{x:Null}" LookupListId="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Type" Guid="081c6e4c-5c14-4f20-b23e-1a71ceb6a67c" IsRequired="False" Name="DocIcon" ReadOnly="True" Type="DefaultValue" />
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Item Child Count" Guid="b824e17e-a1b3-426e-aecf-f0184d900485" IsRequired="False" LookupListId="" Name="ItemChildCount" ReadOnly="True" Type="Lookup">
+            <umsm:Office365SharepointListColumnSlim.LookupColumn>
+              <umsmc:LookupColumnMetadata ColumnName="ItemChildCount" MultiSelect="False" />
+            </umsm:Office365SharepointListColumnSlim.LookupColumn>
+          </umsm:Office365SharepointListColumnSlim>
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="Folder Child Count" Guid="960ff01f-2b6d-4f1b-9c3f-e19ad8927341" IsRequired="False" LookupListId="" Name="FolderChildCount" ReadOnly="True" Type="Lookup">
+            <umsm:Office365SharepointListColumnSlim.LookupColumn>
+              <umsmc:LookupColumnMetadata ColumnName="FolderChildCount" MultiSelect="False" />
+            </umsm:Office365SharepointListColumnSlim.LookupColumn>
+          </umsm:Office365SharepointListColumnSlim>
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="App Created By" Guid="6bfaba20-36bf-44b5-a1b2-eb6346d49716" IsRequired="False" LookupListId="AppPrincipals" Name="AppAuthor" ReadOnly="True" Type="Lookup">
+            <umsm:Office365SharepointListColumnSlim.LookupColumn>
+              <umsmc:LookupColumnMetadata ColumnName="Title" MultiSelect="False" />
+            </umsm:Office365SharepointListColumnSlim.LookupColumn>
+          </umsm:Office365SharepointListColumnSlim>
+          <umsm:Office365SharepointListColumnSlim Choice="{x:Null}" PersonOrGroup="{x:Null}" DisplayName="App Modified By" Guid="e08400f3-c779-4ed2-a18c-ab7f34caa318" IsRequired="False" LookupListId="AppPrincipals" Name="AppEditor" ReadOnly="True" Type="Lookup">
+            <umsm:Office365SharepointListColumnSlim.LookupColumn>
+              <umsmc:LookupColumnMetadata ColumnName="Title" MultiSelect="False" />
+            </umsm:Office365SharepointListColumnSlim.LookupColumn>
+          </umsm:Office365SharepointListColumnSlim>
+        </x:Array>
+      </umas:GetListItemsConnections.AllColumns>
+      <umas:GetListItemsConnections.ColumnsToRetrieve>
+        <x:Array Type="umsm:Office365SharepointListColumnSlim">
+          <x:Reference>__ReferenceID0</x:Reference>
+        </x:Array>
+      </umas:GetListItemsConnections.ColumnsToRetrieve>
+      <umas:GetListItemsConnections.ListItemBackup>
+        <usau:BackupSlot x:TypeArguments="umase:ItemSelectionMode" StoredValue="Browse">
+          <usau:BackupSlot.BackupValues>
+            <scg:Dictionary x:TypeArguments="umase:ItemSelectionMode, scg:List(x:Object)" />
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </umas:GetListItemsConnections.ListItemBackup>
+      <umas:GetListItemsConnections.ListNameOrId>
+        <InArgument x:TypeArguments="x:String" />
+      </umas:GetListItemsConnections.ListNameOrId>
+      <umas:GetListItemsConnections.SiteUrl>
+        <InArgument x:TypeArguments="x:String" />
+      </umas:GetListItemsConnections.SiteUrl>
+    </umas:GetListItemsConnections>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Worked&quot;]" />
+  </Sequence>
+</Activity>
